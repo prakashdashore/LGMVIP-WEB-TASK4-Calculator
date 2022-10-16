@@ -1,21 +1,12 @@
-const buttons = document
-    .querySelector('.buttons');
-
-const screen = document
-    .querySelector('.screen');
-
-const audio = document
-    .querySelector('audio');
+const buttons = document.querySelector('.buttons');
+const screen = document.querySelector('.screen');
+const audio = document.querySelector('audio');
 
 buttons
     .addEventListener('click', (e) => {
-
         let value = e.target.textContent;
         let screenVal = screen.textContent;
-
         audio.play();
-
-
         switch (value) {
             case 'C':
                 screen.textContent = '';
